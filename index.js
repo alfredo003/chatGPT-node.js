@@ -8,7 +8,7 @@ const openai =  new OpenAIApi(new Configuration({
 
 openai.createChatCompletion({
   model: "gpt-3.5-turbo",
-  messages:[{role:"user",content:"qual é o idioma dessa frase: a life é boa"}]
+  messages:[{role:"user",content:"Eu peso 72 e tenho 1,60 de altura elabora um programa de treino"}]
 }).then(res=>{
   console.log(res.data.choices[0].message.content)
 })
